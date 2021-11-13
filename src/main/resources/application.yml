@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+swagger:
+  config:
+    api:
+      basepackage : org.example.azure.storage.controller
+      path : /.*
+api:
+  version : 1.0
+  description : Azure storage Service
+  title : Azure storage serviceexample
+azure:
+  storage:
+    account-name: teststoreaccount123321
+    account-key: DefaultEndpointsProtocol=https;AccountName=teststoreaccount123321;AccountKey=GwNFAyiXiUYW8mbcxJBt6CDo1hfeHz359bIxv5pEG3mQnB0D1Ka3eWW+pCeKuoeL78tTL0P/RROHwVlmYFF6DA==;EndpointSuffix=core.windows.net
+    blob-endpoint: https://teststoreaccount123321.blob.core.windows.net/test
