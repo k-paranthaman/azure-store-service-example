@@ -33,6 +33,7 @@ public class SentBlobController {
         try  {
             BlobClient blobUploadClient=containerClient.getBlobClient("profile/authuser/"+data.getOriginalFilename());
             blobUploadClient.upload(data.getInputStream(),data.getSize());
+
             return ResponseEntity.ok().body("Upload Success");
         }catch (Exception e){
             e.printStackTrace();
